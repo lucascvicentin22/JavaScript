@@ -10,13 +10,21 @@
             let nome = document.getElementById("nome").value;
             let idade = document.getElementById("idade").value;
 
+            if(idade > 0){
             console.log(nome)
 
             if(idade >= 18){
                 console.log("Bebida Liberada")
             }else{
-                console.log("Bebida Proibida")
+                console.error("Bebida Proibida")
+
+                let diferencaIdade = 18 - idade;
+                console.error("Você podera consumir alcool daqui " + diferencaIdade + " anos");
             }
+            limpar();
+        }else{
+            alert("Digite uma idade válida.")
+        }
         }
         function limpar(){
             document.getElementById("nome").value = '';
