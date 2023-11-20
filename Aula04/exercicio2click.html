@@ -6,21 +6,6 @@
 <body>
   <p id="paragrafo1">Este é o primeiro parágrafo.</p>
   <p id="paragrafo2">Este é o segundo parágrafo.</p>
-  <script>
-    let paragrafo1 = document.getElementById('paragrafo1');
-    let paragrafo2 = document.getElementById('paragrafo2');
-    
-    paragrafo1.addEventListener('click', function() {
-      let textoParagrafo2 = paragrafo2.textContent;
-      paragrafo2.textContent = paragrafo1.textContent;
-      paragrafo1.textContent = textoParagrafo2;
-    });
-    
-    paragrafo2.addEventListener('click', function() {
-      let textoParagrafo1 = paragrafo1.textContent;
-      paragrafo1.textContent = paragrafo2.textContent;
-      paragrafo2.textContent = textoParagrafo1;
-    });
-    </script>
+  <script src="exercicio2click.js"></script>
 </body>
 </html>
